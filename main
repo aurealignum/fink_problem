@@ -1,0 +1,98 @@
+import numpy as np
+numbers = [1,2,3,4,5,6,7,8,9]
+output_1 = []
+output_2 = []
+output_3 = []
+output_4 = []
+output_5 = []
+output_6 = []
+
+
+
+def one_hundred():
+    for i in range(8):
+        out = 100
+        n_1 = [2,3,4,5,6,7,8,9]
+        for_loop_one = out + (10 * n_1[i])
+        del n_1[i]
+        for x in xrange(7):
+            out = for_loop_one
+            out += n_1[x]
+            #print n_1[x]
+            output_1.append(out)
+def two_hundred():
+    for i in range(8):
+        out = 200
+        n_1 = [1,3,4,5,6,7,8,9]
+        for_loop_one = out + (10 * n_1[i])
+        del n_1[i]
+        for x in xrange(7):
+            out = for_loop_one
+            out += n_1[x]
+            #print n_1[x]
+            output_2.append(out)
+def three_hundred():
+    for i in range(8):
+        out = 300
+        n_1 = [1,2,4,5,6,7,8,9]
+        for_loop_one = out + (10 * n_1[i])
+        del n_1[i]
+        for x in xrange(7):
+            out = for_loop_one
+            out += n_1[x]
+            #print n_1[x]
+            output_3.append(out)
+def four_hundred():
+    for i in range(8):
+        out = 400
+        n_1 = [1,2,3,5,6,7,8,9]
+        for_loop_one = out + (10 * n_1[i])
+        del n_1[i]
+        for x in xrange(7):
+            out = for_loop_one
+            out += n_1[x]
+            #print n_1[x]
+            output_4.append(out)
+def five_hundred():
+    for i in range(8):
+        out = 500
+        n_1 = [1,2,3,4,6,7,8,9]
+        for_loop_one = out + (10 * n_1[i])
+        del n_1[i]
+        for x in xrange(7):
+            out = for_loop_one
+            out += n_1[x]
+            #print n_1[x]
+            output_5.append(out)
+def six_hundred():
+    for i in range(8):
+        out = 600
+        n_1 = [1,2,3,4,5,7,8,9]
+        for_loop_one = out + (10 * n_1[i])
+        del n_1[i]
+        for x in xrange(7):
+            out = for_loop_one
+            out += n_1[x]
+            #print n_1[x]
+            output_6.append(out)
+
+
+one_hundred()
+two_hundred()
+three_hundred()
+four_hundred()
+five_hundred()
+six_hundred()
+
+out = np.array([[output_1],[output_2],[output_3],[output_4],[output_5],[output_6]])
+
+a = 0
+b = 0
+c = 0
+d = 0
+e = 0
+f = 0
+
+print out
+
+final = out[a,0,b] + out[c,0,d] + out[e,0,f]
